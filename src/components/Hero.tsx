@@ -3,7 +3,9 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 import { Link } from 'react-scroll';
-
+import avif from "@/imgs/avatar/jjufmfvslkctxygfca4q.avif"
+import webp from "@/imgs/avatar/bn8jvtsp7mxkr7jv5orv.webp"
+import png from "@/imgs/avatar/88367cd9-8e70-44ed-a1d1-5ec857ec3093.png"
 const Hero = () => {
   return (
     <section id="hero" className="pt-20 pb-32 px-4 lg:min-h-[calc(100vh-73px)] flex items-center">
@@ -33,9 +35,9 @@ I am a web developer focused on building modern, responsive, and user-friendly w
             <div className="bg-gradient-to-br from-[#607CCD]/20 to-[#607CCD]/10 p-6 rounded-2xl shadow-lg">
              
 <picture>
-  <source srcSet="@/imgs/avatar/jjufmfvslkctxygfca4q.avif" type="image/avif" />
-  <source srcSet="@/imgs/avatar/bn8jvtsp7mxkr7jv5orv.webp" type="image/webp" />
-  <img src="@/imgs/avatar/88367cd9-8e70-44ed-a1d1-5ec857ec3093.png" className='w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl' alt="avatar" />
+  <source srcSet={avif} />
+  <source srcSet={webp} type="image/webp" />
+  <img src={png} className='w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl' alt="avatar" />
 </picture>
             </div>
           </div>
